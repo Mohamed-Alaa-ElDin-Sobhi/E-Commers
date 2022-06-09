@@ -27,7 +27,7 @@ if(isset($_SESSION['user'])){
             $sql            = " SELECT * FROM `users` WHERE `user_id`= '$id' LIMIT 1";
             $query          = $conn->query($sql) ;
             $row            = $query->fetch_array() ; 
-          
+            
             if(isset($row['user_id']) && $_SESSION['user'] == $row['user_name']){
 
                 ?>
@@ -74,24 +74,24 @@ if(isset($_SESSION['user'])){
 
                     </form>
                 </div>
-  
-      <?php }else{
+
+        <?php }else{
                 header('location:index.php') ;
             }
         }else{
             header('location:index.php') ;
         }
     }
-     /*===========================================================
+    /*===========================================================
     ======================= Update صفحه ال =========================
     ============================================================*/
     elseif($action == "Update" ){
-      if($_SERVER['REQUEST_METHOD'] == "POST"){
+        if($_SERVER['REQUEST_METHOD'] == "POST"){
         echo "<h1 class = 'text-center'>Update Member</h1>" ;
         
-      }else{
+        }else{
         header('location:index.php') ;
-      }
+        }
 
     }
 

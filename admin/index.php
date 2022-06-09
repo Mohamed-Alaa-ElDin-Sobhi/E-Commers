@@ -12,7 +12,7 @@ include 'init.php' ;
         
         
         $sql        = " SELECT
-                           `user_id` , `gruop_id`,`user_name`,`password` 
+                            `user_id` , `gruop_id`,`user_name`,`password` 
                         FROM 
                             `users` 
                         WHERE `user_name` = '$user'" ;

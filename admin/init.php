@@ -24,4 +24,4 @@
     if(!isset($NoNavbar)){ include $temp . 'navbar.php' ; }
     //connectاستدعاء صفحه ال
     include 'connect.php' ;
-  
+    
