@@ -1,5 +1,6 @@
 <?php 
 session_start() ;
+echo 'helo';
 if(isset($_SESSION['user'])){
     header('location:dashbord.php') ;
 }
